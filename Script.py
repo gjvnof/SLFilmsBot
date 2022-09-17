@@ -6,7 +6,7 @@ Just Add Me To Your Groups As Admin 🤩"""
     ABOUT_TXT = """★ My Name: {}
 ★ Bot Server: Heroku
 ★ Database: MongoDB
-★ Creator: <a href=https://t.me/Hansaka_Anuhas>Hansaka Anuhas 🇱🇰</a>"""
+★ Creator: <a href=https://t.me/Hansaka_Anuhas>Hansaka Anuhas</a> 🇱🇰"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
     
 <b>Commands and Usage:</b>
