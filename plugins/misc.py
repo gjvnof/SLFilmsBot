@@ -80,7 +80,7 @@ async def who_is(client, message):
     username = from_user.username or "<b>None</b>"
     dc_id = from_user.dc_id or "[User Doesn't Have A Valid DP]"
     message_out_str += f"<b>★ Data Centre:</b> <code>{dc_id}</code>\n"
-    message_out_str += f"<b>★ User Name:</b> @{username}\n"
+    message_out_str += f"<b>★ Username:</b> @{username}\n"
     message_out_str += f"<b>★ User 𝖫𝗂𝗇𝗄:</b> <a href='tg://user?id={from_user.id}'>Click Here</a>\n"
     if message.chat.type in ((enums.ChatType.SUPERGROUP, enums.ChatType.CHANNEL)):
         try:
