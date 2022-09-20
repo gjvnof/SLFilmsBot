@@ -502,7 +502,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "rfrsh":
-        await query.answer("Refreshing...")
+        await query.answer("efreshing...")
         buttons = [[
             InlineKeyboardButton('Back', callback_data='help'),
             InlineKeyboardButton('Refresh', callback_data='rfrsh')
