@@ -444,12 +444,25 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('Processing...')
     elif query.data == "about":
         buttons = [[
+            InlineKeyboardButton('Source Code', callback_data='source')
+            ], [
             InlineKeyboardButton('Home', callback_data='start'),
             InlineKeyboardButton('Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        await query.answer('Coming Soon...')
+    elif query.data == "source":
+        buttons = [[
+            InlineKeyboardButton('Back', callback_data='about')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.SOURCE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
