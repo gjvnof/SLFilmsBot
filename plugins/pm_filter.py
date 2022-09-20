@@ -441,6 +441,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await query.answer('Processing...')
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('Home', callback_data='start'),
@@ -452,6 +453,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await query.answer('Processing...')
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='help'),
@@ -463,6 +465,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await query.answer('Processing...')
     elif query.data == "button":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='manuelfilter')
@@ -473,6 +476,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await query.answer('Processing...')
     elif query.data == "coct":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='help')
@@ -483,26 +487,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "stats":
-        buttons = [[
-            InlineKeyboardButton('Back', callback_data='help'),
-            InlineKeyboardButton('Refresh', callback_data='rfrsh')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        total = await Media.count_documents()
-        users = await db.total_users_count()
-        chats = await db.total_chat_count()
-        monsize = await db.get_db_size()
-        free = 536870912 - monsize
-        monsize = get_size(monsize)
-        free = get_size(free)
-        await query.message.edit_text(
-            text=script.STATUS_TXT.format(total, users, chats, monsize, free),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
     elif query.data == "rfrsh":
-        await query.answer("efreshing...")
+        await query.answer("Refreshing...")
         buttons = [[
             InlineKeyboardButton('Back', callback_data='help'),
             InlineKeyboardButton('Refresh', callback_data='rfrsh')
@@ -526,7 +512,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('Piracy Is Crime')
+            return await query.answer('Processing...')
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
@@ -573,7 +559,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('Piracy Is Crime')
+    await query.answer('Processing...')
 
 
 async def auto_filter(client, msg, spoll=False):
