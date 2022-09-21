@@ -444,7 +444,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('Processing...')
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Source Code', callback_data='source')
+            InlineKeyboardButton('Source Code', url='https://github.com/SLHansakaAnuhas/SLFilmsBot')
             ], [
             InlineKeyboardButton('Home', callback_data='start'),
             InlineKeyboardButton('Close', callback_data='close_data')
@@ -452,17 +452,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer('Processing...')
-    elif query.data == "source":
-        buttons = [[
-            InlineKeyboardButton('Back', callback_data='about')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.SOURCE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -502,25 +491,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.answer('Processing...')
     elif query.data == "stats":
-        buttons = [[
-            InlineKeyboardButton('Back', callback_data='help'),
-            InlineKeyboardButton('Refresh', callback_data='rfrsh')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        total = await Media.count_documents()
-        users = await db.total_users_count()
-        chats = await db.total_chat_count()
-        monsize = await db.get_db_size()
-        free = 536870912 - monsize
-        monsize = get_size(monsize)
-        free = get_size(free)
-        await query.message.edit_text(
-            text=script.STATUS_TXT.format(total, users, chats, monsize, free),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "rfrsh":
-        await query.answer("Refreshing...")
         buttons = [[
             InlineKeyboardButton('Back', callback_data='help'),
             InlineKeyboardButton('Refresh', callback_data='rfrsh')
