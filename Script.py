@@ -17,7 +17,7 @@ Just Add Me To Your Groups As Admin 🤩"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
 <b>URL Buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/SL_Films_Bot)</code>
+<code>[Button Text](buttonurl:https://t.me/{temp.U_NAME})</code>
 
 <b>Alert Buttons:</b>
 <code>[Button Text](buttonalert:Alert Message)</code>"""
