@@ -136,7 +136,7 @@ async def advantage_spoll_choker(bot, query):
     if not movies:
         return await query.answer("You are clicking on an old button which is expired.", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('Checking for Film in database...')
+    await query.answer('Checking for Movie in database...')
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
@@ -144,7 +144,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Film Not Found In DataBase')
+            k = await query.message.edit('This Movie Not Found In DataBase')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -166,20 +166,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     title = chat.title
                 except:
                     await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
-                    return await query.answer('processing...')
+                    return await query.answer('Loading...')
             else:
                 await query.message.edit_text(
                     "I'm not connected to any groups!\nCheck /connections or connect to any groups",
                     quote=True
                 )
-                return await query.answer('processing...')
+                return await query.answer('Loading...')
 
         elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             grp_id = query.message.chat.id
             title = query.message.chat.title
 
         else:
-            return await query.answer('processing...')
+            return await query.answer('Loading...')
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
@@ -233,7 +233,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=keyboard,
             parse_mode=enums.ParseMode.MARKDOWN
         )
-        return await query.answer('processing...')
+        return await query.answer('Loading...')
     elif "connectcb" in query.data:
         await query.answer()
 
@@ -254,7 +254,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Some error occurred!!', parse_mode=enums.ParseMode.MARKDOWN)
-        return await query.answer('Piracy Is Crime')
+        return await query.answer('Loading...')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -277,7 +277,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('processing...')
+        return await query.answer('Loading...')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -295,7 +295,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('processing...')
+        return await query.answer('Loading...')
     elif query.data == "backcb":
         await query.answer()
 
@@ -306,7 +306,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('processing...')
+            return await query.answer('Loading...')
         buttons = []
         for groupid in groupids:
             try:
@@ -426,7 +426,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Processing...')
+        await query.answer('Loading...')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Manual Filters', callback_data='manuelfilter'),
@@ -441,7 +441,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Processing...')
+        await query.answer('Loading...')
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('Source Code', url='https://github.com/SLHansakaAnuhas/SLFilmsBot')
@@ -455,7 +455,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Processing...')
+        await query.answer('Loading...')
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='help'),
@@ -467,7 +467,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Processing...')
+        await query.answer('Loading...')
     elif query.data == "button":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='manuelfilter')
@@ -478,7 +478,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Processing...')
+        await query.answer('Loading...')
     elif query.data == "coct":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='help')
@@ -489,11 +489,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Processing...')
+        await query.answer('Loading...')
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='help'),
-            InlineKeyboardButton('Refresh', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -514,7 +513,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('Processing...')
+            return await query.answer('Loading...')
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
@@ -561,7 +560,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('Processing...')
+    await query.answer('Loading...')
 
 
 async def auto_filter(client, msg, spoll=False):
