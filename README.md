@@ -48,7 +48,7 @@
 ```
 
 ## Special Thanks
-[Team Eva Maria](https://t.me/TeamEvamaria)
+[!Team Eva Maria](https://t.me/TeamEvamaria)
 
 ## Deploy to Heroku
 
