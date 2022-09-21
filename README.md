@@ -47,6 +47,9 @@
 • /link - to create link for one post
 ```
 
+## Special Thanks
+[Team Eva Maria](https://t.me/TeamEvamaria)
+
 ## Deploy to Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SLHansakaAnuhas/SLFilmsBot)
