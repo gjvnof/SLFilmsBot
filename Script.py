@@ -7,7 +7,6 @@ Just Add Me To Your Groups As Admin 🤩"""
 ★ Bot Server: Heroku
 ★ Database: MongoDB
 ★ Creator: <a href=https://t.me/Hansaka_Anuhas>Hansaka Anuhas</a> 🇱🇰"""
-    SOURCE_TXT = """Source Code - <a href=https://github.com/SLHansakaAnuhas/SLFilmsBot>Click Here</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
     
 <b>Commands and Usage:</b>
