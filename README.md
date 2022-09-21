@@ -46,9 +46,8 @@
 • /batch - to create link for multiple posts
 • /link - to create link for one post
 ```
-
-## Special Thanks
- - [Team Eva Maria](https://t.me/TeamEvamaria)
+## Special Notice
+ - This is modified version of [EvaMaria](https://github.com/EvamariaTG/EvaMaria) repository. All credits should goes to [Team EvaMaria](https://t.me/TeamEvamaria) developers.
 
 ## Deploy to Heroku
 
