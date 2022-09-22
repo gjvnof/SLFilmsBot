@@ -2,9 +2,9 @@
   <b>Filter Bot</b>
 </h1>
 
-[![Maintained](https://img.shields.io/badge/Maintained%3F-Yes-green)](https://github.com/SLHansakaAnuhas/SLFilmsBot)
+[![Maintained](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://github.com/SLHansakaAnuhas/SLFilmsBot)
 
-[![Maintainer](https://img.shields.io/badge/Maintainer-Hansaka%20Anuhas-blue)](https://t.me/Hansaka_Anuhas)
+[![Maintainer](https://img.shields.io/badge/Maintainer-Hansaka%20Anuhas-blue.svg)](https://t.me/Hansaka_Anuhas)
 
 ## Features
 
