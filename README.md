@@ -2,7 +2,9 @@
   <b>Filter Bot</b>
 </h1>
 
+<h1 align="center">
 [![Maintained?](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/SLHansakaAnuhas/SLFilmsBot)
+</h1>
 
 ## Features
 
