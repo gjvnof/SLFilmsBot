@@ -1,5 +1,5 @@
 <h1 align="center">
-  <b>Filter Bot</b>
+  <b>Auto Filter Bot</b>
 </h1>
 
 [![Maintained](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://github.com/SLHansakaAnuhas/SLFilmsBot)
