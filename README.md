@@ -10,7 +10,6 @@
 
 - [x] Auto Filter
 - [x] Manual Filter
-- [x] IMDb
 - [x] Admin Commands
 - [x] Broadcast
 - [x] Index
@@ -35,7 +34,7 @@
 • /deleteall - delete all index
 • /delete - delete a specific file from index
 • /info - get user info
-• /id - get tg ids
+• /id - get telegram ids
 • /imdb - fetch info from imdb
 • /users - to get list of my users and ids
 • /chats - to get list of the my chats and ids
