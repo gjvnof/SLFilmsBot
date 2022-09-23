@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """Hello {} 👋
-I Can Provide Films 🥳
+I Can Provide Movies 🥳
 Just Add Me To Your Groups As Admin 🤩"""
     HELP_TXT = """Here Is The Help For My Commands"""
     ABOUT_TXT = """★ My Name: {}
