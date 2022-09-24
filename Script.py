@@ -11,6 +11,7 @@ Just Add Me To Your Groups As Admin 🤩"""
 ★ Creator: <a href=https://t.me/Hansaka_Anuhas>Hansaka Anuhas</a> 🇱🇰"""
 
     MANUELFILTER_TXT = """Help: <b>Filters</b>
+
 <b>Commands and Usage:</b>
 • /filter - Add Filter
 • /filters - List All Filters
@@ -18,6 +19,7 @@ Just Add Me To Your Groups As Admin 🤩"""
 • /delall - Delete All Filters"""
 
     BUTTON_TXT = """Help: <b>Buttons</b>
+
 <b>URL Buttons:</b>
 <code>[Button Text](buttonurl:https://t.me/{})</code>
 
@@ -25,6 +27,7 @@ Just Add Me To Your Groups As Admin 🤩"""
 <code>[Button Text](buttonalert:Alert Message)</code>"""
 
     CONNECTION_TXT = """Help: <b>Connections</b>
+
 <b>Commands and Usage:</b>
 • /connect - Connect PM
 • /disconnect - Disconnect PM
