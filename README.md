@@ -61,11 +61,13 @@
 Licensed under [GNU AGPL 2.0](https://github.com/SLHansakaAnuhas/SLFilmsBot/blob/master/LICENSE). Selling The Codes To Other People For Money Is *Strictly Prohibited*.
 
 ## Deploy To VPS
-git clone https://github.com/EvamariaTG/evamaria
+```
+git clone https://github.com/SLHansakaAnuhas/SLFilmsBot
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
 python3 bot.py
+```
 
 ## Deploy to Heroku
 
