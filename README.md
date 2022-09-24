@@ -27,8 +27,8 @@
 • /stats - to get status of files in db
 • /filter - add manual filters
 • /filters - view filters
-• /connect - connect to PM
-• /disconnect - disconnect from PM
+• /connect - connect to pm
+• /disconnect - disconnect from pm
 • /del - delete a filter
 • /delall - delete all filters
 • /deleteall - delete all index
