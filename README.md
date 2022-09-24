@@ -60,7 +60,7 @@
 
 Licensed under [GNU AGPL 2.0](https://github.com/SLHansakaAnuhas/SLFilmsBot/blob/master/LICENSE). Selling The Codes To Other People For Money Is *Strictly Prohibited*.
 
-## Deploy To VPS
+## Deploy to VPS
 ```
 git clone https://github.com/SLHansakaAnuhas/SLFilmsBot
 # Install Packages
