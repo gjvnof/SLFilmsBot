@@ -6,6 +6,8 @@
 
 [![Maintainer](https://img.shields.io/badge/Maintainer-Hansaka%20Anuhas-blue.svg)](https://t.me/Hansaka_Anuhas)
 
+[![Open Source](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/SLHansakaAnuhas/SLFilmsBot)
+
 ## Features
 
 - [x] Auto Filters
