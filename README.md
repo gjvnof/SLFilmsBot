@@ -1,5 +1,5 @@
 <h1 align="center">
-  <b>Auto Filter Bot</b>
+  <b>Auto Filters Bot</b>
 </h1>
 
 [![Maintained](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://github.com/SLHansakaAnuhas/SLFilmsBot)
@@ -8,8 +8,8 @@
 
 ## Features
 
-- [x] Auto Filter
-- [x] Manual Filter
+- [x] Auto Filters
+- [x] Manual Filters
 - [x] Admin Commands
 - [x] Broadcast
 - [x] Index
