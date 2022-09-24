@@ -10,6 +10,7 @@
 
 - [x] Auto Filters
 - [x] Manual Filters
+- [x] IMDb
 - [x] Admin Commands
 - [x] Broadcast
 - [x] Index
@@ -50,7 +51,7 @@
 • /link - to create link for one post
 ```
 ## Special Notice
- - This is modified version of [EvaMaria](https://github.com/EvamariaTG/EvaMaria) repository. All credits should goes to [Team EvaMaria](https://t.me/TeamEvamaria) developers.
+- This is modified version of [EvaMaria](https://github.com/EvamariaTG/EvaMaria) repository. All credits should goes to [Team EvaMaria](https://t.me/TeamEvamaria) developers.
 
 ## Deploy to Heroku
 
