@@ -3,7 +3,7 @@ class script(object):
 I Can Provide Movies 🥳
 Just Add Me To Your Groups As Admin 🤩"""
     HELP_TXT = """Here Is The Help For My Commands"""
-    ABOUT_TXT = """★ My Name: {}
+    ABOUT_TXT = """★ My Name: <a href=https://t.me/{}>{}</a>
 ★ Bot Server: <a href=https://www.heroku.com>Heroku</a>
 ★ Database: <a href=https://www.mongodb.com>MongoDB</a>
 ★ Creator: <a href=https://t.me/Hansaka_Anuhas>Hansaka Anuhas</a> 🇱🇰"""
