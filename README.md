@@ -8,6 +8,10 @@
 
 [![Open Source](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/SLHansakaAnuhas/SLFilmsBot)
 
+## Support
+
+[![telegram badge](https://img.shields.io/badge/Telegram-Group-30302f?style=flat&logo=telegram)](https://t.me/Filter_Bot_Support)
+
 ## Features
 
 - [x] Auto Filters
