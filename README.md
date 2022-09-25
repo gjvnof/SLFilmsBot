@@ -21,7 +21,7 @@
 - [x] Random Pictures
 - [x] IDs and User Info
 - [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
-- [x] Spelling Check Feature
+- [x] Spelling Checking
 - [x] File Store
 
 ## Commands
