@@ -2,12 +2,6 @@
   <b>Filter Bot</b>
 </h1>
 
-[![Maintained](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://github.com/SLHansakaAnuhas/SLFilmsBot)
-
-[![Maintainer](https://img.shields.io/badge/Maintainer-Hansaka%20Anuhas-blue.svg)](https://t.me/Hansaka_Anuhas)
-
-[![Open Source](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/SLHansakaAnuhas/SLFilmsBot)
-
 ## Support
 
 [![Support](https://img.shields.io/badge/Telegram-Group-30302f?style=flat&logo=telegram)](https://t.me/Filter_Bot_Support)
