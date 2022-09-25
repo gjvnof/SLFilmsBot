@@ -10,7 +10,7 @@
 
 ## Support
 
-[![telegram badge](https://img.shields.io/badge/Telegram-Group-30302f?style=flat&logo=telegram)](https://t.me/Filter_Bot_Support)
+[![Support](https://img.shields.io/badge/Telegram-Group-30302f?style=flat&logo=telegram)](https://t.me/Filter_Bot_Support)
 
 ## Features
 
