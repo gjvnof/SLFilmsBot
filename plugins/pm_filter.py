@@ -488,7 +488,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Loading...')
+        await query.answer('Help')
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='help'),
