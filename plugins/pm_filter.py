@@ -440,7 +440,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('Source Code', url='https://github.com/SLHansakaAnuhas/SLFilmsBot')
@@ -454,7 +453,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Loading...')
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='help'),
@@ -466,7 +464,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Loading...')
     elif query.data == "button":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='manuelfilter')
@@ -477,7 +474,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Loading...')
     elif query.data == "coct":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='help')
@@ -488,7 +484,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Help')
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='help'),
