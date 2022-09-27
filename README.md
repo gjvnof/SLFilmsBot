@@ -3,7 +3,7 @@
 </h1>
 
 ## Support
-[Support Chat Group](https://t.me/Filter_Bot_Support)
+- [Support Chat Group](https://t.me/Filter_Bot_Support)
 
 ## Features
 - [x] Auto Filters
