@@ -3,11 +3,9 @@
 </h1>
 
 ## Support
-
-[![Support](https://img.shields.io/badge/Telegram-Group-30302f?style=flat&logo=telegram)](https://t.me/Filter_Bot_Support)
+[Support Chat Group](https://t.me/Filter_Bot_Support)
 
 ## Features
-
 - [x] Auto Filters
 - [x] Manual Filters
 - [x] IMDb
@@ -50,12 +48,11 @@
 • /batch - to create link for multiple posts
 • /link - to create link for one post
 ```
+
 ## Special Notice
 - This is modified version of [EvaMaria](https://github.com/EvamariaTG/EvaMaria) repository. All credits should goes to [Team EvaMaria](https://t.me/TeamEvamaria) developers.
 
 ## Disclaimer
-[![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)
-
 Licensed under [GNU AGPL 2.0](https://github.com/SLHansakaAnuhas/SLFilmsBot/blob/master/LICENSE). Selling The Codes To Other People For Money Is *Strictly Prohibited*.
 
 ## Deploy to VPS
@@ -68,5 +65,4 @@ python3 bot.py
 ```
 
 ## Deploy to Heroku
-
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
