@@ -53,7 +53,7 @@
 - This is modified version of [EvaMaria](https://github.com/EvamariaTG/EvaMaria) repository. All credits should goes to [Team EvaMaria](https://t.me/TeamEvamaria) developers.
 
 ## Disclaimer
-Licensed under [GNU AGPL 2.0](https://github.com/SLHansakaAnuhas/SLFilmsBot/blob/master/LICENSE). Selling The Codes To Other People For Money Is *Strictly Prohibited*.
+- Licensed under [GNU AGPL 2.0](https://github.com/SLHansakaAnuhas/SLFilmsBot/blob/master/LICENSE). Selling The Codes To Other People For Money Is *Strictly Prohibited*.
 
 ## Deploy to VPS
 ```
