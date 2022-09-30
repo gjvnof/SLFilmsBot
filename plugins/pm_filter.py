@@ -429,10 +429,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Manual Filters', callback_data='manuelfilter'),
-            InlineKeyboardButton('Connections', callback_data='coct'),
+            InlineKeyboardButton('Connections', callback_data='coct')
         ], [
             InlineKeyboardButton('Home', callback_data='start'),
             InlineKeyboardButton('Status', callback_data='stats')
+        ], [
+            InlineKeyboardButton('Support', url='https://t.me/Filter_Bot_Support'),
+            InlineKeyboardButton('Updates', url='https://t.me/+IubAmmhJF9ZmNmZl')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -486,7 +489,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "stats":
         buttons = [[
-            InlineKeyboardButton('Back', callback_data='help'),
+            InlineKeyboardButton('Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
