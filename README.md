@@ -1,5 +1,5 @@
 <h1 align="center">
-  <b>Filter Bot</b>
+  <b>Auto Filter Bot</b>
 </h1>
 
 ## Deploy to Heroku
