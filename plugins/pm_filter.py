@@ -434,8 +434,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Home', callback_data='start'),
             InlineKeyboardButton('Status', callback_data='stats')
         ], [
-            InlineKeyboardButton('Support', url='https://t.me/Filter_Bot_Support'),
-            InlineKeyboardButton('Updates', url='https://t.me/+IubAmmhJF9ZmNmZl')
+            InlineKeyboardButton('Support', url='https://t.me/Filter_Bot_Support')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
