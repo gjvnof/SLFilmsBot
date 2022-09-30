@@ -428,13 +428,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('Loading...')
     elif query.data == "help":
         buttons = [[
+            InlineKeyboardButton('Support Group', url='https://t.me/Filter_Bot_Support')
+        ], [
             InlineKeyboardButton('Manual Filters', callback_data='manuelfilter'),
             InlineKeyboardButton('Connections', callback_data='coct')
         ], [
             InlineKeyboardButton('Back', callback_data='start'),
             InlineKeyboardButton('Status', callback_data='stats')
-        ], [
-            InlineKeyboardButton('Support', url='https://t.me/Filter_Bot_Support')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
