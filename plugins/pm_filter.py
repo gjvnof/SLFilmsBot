@@ -431,7 +431,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Manual Filters', callback_data='manuelfilter'),
             InlineKeyboardButton('Connections', callback_data='coct')
         ], [
-            InlineKeyboardButton('Home', callback_data='start'),
+            InlineKeyboardButton('Back', callback_data='start'),
             InlineKeyboardButton('Status', callback_data='stats')
         ], [
             InlineKeyboardButton('Support', url='https://t.me/Filter_Bot_Support')
@@ -444,10 +444,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Source Code', url='https://github.com/SLHansakaAnuhas/SLFilmsBot')
-            ], [
-            InlineKeyboardButton('Home', callback_data='start'),
-            InlineKeyboardButton('Close', callback_data='close_data')
+            InlineKeyboardButton('Back', callback_data='start'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
