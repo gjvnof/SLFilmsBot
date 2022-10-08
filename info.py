@@ -27,3 +27,4 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
