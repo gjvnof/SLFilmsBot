@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/SLHansakaAnuhas/SLFilmsBot",
-    "repository": "https://github.com/SLHansakaAnuhas/SLFilmsBot",
+    "website": "https://github.com/gjvnof/SLFilmsBot",
+    "repository": "https://github.com/gjvnof/SLFilmsBot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
