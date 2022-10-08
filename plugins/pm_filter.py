@@ -303,7 +303,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.STATUS_TXT.format(total, users, chats, monsize, free),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-
+        )
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
     name = text or message.text
