@@ -9,9 +9,7 @@ logging.getLogger("imdbpy").setLevel(logging.ERROR)
 
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
-from utils import temp
-from typing import Union, Optional, AsyncGenerator
-from pyrogram import types
+
 
 class Bot(Client):
 
