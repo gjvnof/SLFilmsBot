@@ -10,5 +10,3 @@ logging.getLogger("imdbpy").setLevel(logging.ERROR)
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 
-app = Bot()
-app.run()
