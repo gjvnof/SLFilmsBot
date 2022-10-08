@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """Hello {} 👋
-I Can Provide Movies 🥳
+I'm An Advanced Manual Filter Bot 😎
 Just Add Me To Your Groups As Admin 🤩"""
 
     HELP_TXT = """Here Is The Help For My Commands"""
@@ -30,12 +30,6 @@ Just Add Me To Your Groups As Admin 🤩"""
 • /connect - Connect PM
 • /disconnect - Disconnect PM
 • /connections - List All Connections"""
-
-    STATUS_TXT = """★ Total Files: <code>{}</code>
-★ Total Users: <code>{}</code>
-★ Total Chats: <code>{}</code>
-★ Used Storage: <code>{}</code>
-★ Free Storage: <code>{}</code>"""
 
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
